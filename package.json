@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch --env-file .env src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "20.14.9",
+    "@types/nodemailer": "6.4.15",
+    "prisma": "5.16.1",
+    "tsx": "4.16.0",
+    "typescript": "5.5.2"
+  },
+  "dependencies": {
+    "@fastify/cors": "9.0.1",
+    "@prisma/client": "5.16.1",
+    "dayjs": "1.11.11",
+    "fastify": "4.28.1",
+    "fastify-type-provider-zod": "2.0.0",
+    "nodemailer": "6.9.14",
+    "zod": "3.23.8"
+  }
+}
