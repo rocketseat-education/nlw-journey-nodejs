@@ -73,7 +73,7 @@ export async function confirmTrip(app: FastifyInstance) {
                 <a href="${confirmationLink}">Confirmar viagem</a>
               </p>
               <p></p>
-              <p>Caso você não saiba do que se trata esse e-mail, apenas ignore esse e-mail.</p>
+              <p>Caso você não saiba do que se trata, apenas ignore este e-mail.</p>
             </div>
           `.trim(),
           })

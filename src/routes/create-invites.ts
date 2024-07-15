@@ -30,11 +30,11 @@ export async function createInvites(app: FastifyInstance) {
         throw new ClientError("Trip not found");
       }
 
-      const invites = emails_to_invite.map((email) =>
-        createInvite(tripId, email)
+      const invites = await Promise.all(
+        emails_to_invite.map(async (email) => await createInvite(tripId, email))
       );
 
-      return { participants: invites };
+      return { invitedParticipants: invites };
     }
   );
 }
