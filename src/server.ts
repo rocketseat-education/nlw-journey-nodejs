@@ -38,18 +38,18 @@ app.register(createTrip);
 app.register(confirmTrip);
 app.register(confirmParticipants);
 app.register(createActivity);
-app.register(deleteActivity);
+// app.register(deleteActivity);
 app.register(getActivities);
 app.register(createLink);
-app.register(deleteLink);
+// app.register(deleteLink);
 app.register(getLinks);
 app.register(getParticipants);
 app.register(createInvites);
 app.register(updateTrip);
 app.register(getTripDetails);
 app.register(getParticipant);
-app.register(deleteParticipant);
-app.register(changeNameParticipant);
+// app.register(deleteParticipant);
+// app.register(changeNameParticipant);
 
 app.listen({ port: env.PORT }).then(() => {
   console.log("Server running!");
